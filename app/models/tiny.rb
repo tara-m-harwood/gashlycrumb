@@ -1,0 +1,2 @@
+class Tiny < ApplicationRecord
+end
