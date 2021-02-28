@@ -1,8 +1,8 @@
 // selects the HTML container that will hold all the items
-$allTiniesContainer = document.querySelector('#all-tinies-container')
+$allTiniesContainer = document.querySelector('#random-tiny-container')
 
 // fetches the data
-fetch('http://localhost:3000/tinies')
+fetch('http://localhost:3000/tinies/random')
   .then(response => response.json())
   .then(tinies => {
       console.log(tinies) 
@@ -11,16 +11,14 @@ fetch('http://localhost:3000/tinies')
       const $eachTinyContainer = document.createElement('div')
       $eachTinyContainer.className = "tinyCard"
       // creates the HTML elements for each item 
-      const $tinyTitle = document.createElement('h2')
-      const $tinySubtitle = document.createElement('h4')
+      const $tinyTitle = document.createElement('h1')
       const $tinyImage = document.createElement('img')
       // manipulates the elements
-      $tinyTitle.innerText = `${tiny.letter} is for ${tiny.name}`
-      console.log(tiny.letter)
-      $tinySubtitle.innerText = tiny.fate
+      console.log(tiny.letter) // for testing
+      $tinyTitle.innerText = `You are ${tiny.name} ${tiny.fate}`
       $tinyImage.src = tiny.image 
       // attaches elements to the DOM
-      $eachTinyContainer.append($tinyTitle, $tinySubtitle, $tinyImage)
+      $eachTinyContainer.append($tinyTitle, $tinyImage)
       $allTiniesContainer.append($eachTinyContainer)
       }
     )

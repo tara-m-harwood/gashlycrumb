@@ -2,6 +2,7 @@
 $allTiniesContainer = document.querySelector('#all-tinies-container')
 
 // fetches the data
+console.log('testing')
 fetch('http://localhost:3000/tinies')
   .then(response => response.json())
   .then(tinies => {

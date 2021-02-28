@@ -33,7 +33,8 @@ class TiniesController < ApplicationController
     end
 
     def random
-        console.log("something")
+        @tiny = Tiny.all.sample(1)
+        render json: @tiny
     end
     
 end
