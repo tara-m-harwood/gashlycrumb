@@ -1,24 +1,7 @@
-# README
+# Welcome to the Gashlycrumb Tiny Fate Generator!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my first truly full-stack app that I build from scratch!
 
-Things you may want to cover:
+I have the POWER!!!  Mwu-ha-ha-haha!!
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![26 ill-fated children posing with the grim reaper](./frontend/assets/gashlycrumbtinies.jpg)
