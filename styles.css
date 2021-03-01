@@ -27,14 +27,44 @@ h1 {
 }
 
 a#random-button {
+	box-shadow:inset 0px 1px 0px 0px #000000;
 	background-color:#000000;
-	border-radius:28px;
-	border:5px solid #001000;
+	border:1px solid #000000;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
 	font-size:24px;
-    margin: 8px;
-	padding:16px 76px;
+	font-weight:bold;
+	padding:15px 165px;
+  margin: 8px;
 	text-decoration:none;
 }
+
+/* the good one
+a#random-button {
+	background-color:#000000;
+	border-radius:28px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:24px;
+  margin: 8px;
+	padding:16px 76px;
+	text-decoration:none;
+} */
+
+/* a#random-button {
+  box-shadow:inset 0px 1px 0px 0px #000000;
+	background-color:#000000;
+	border-radius:28px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:24px;
+  margin: 8px;
+	padding:16px 76px;
+	text-decoration:none;
+} */
+
