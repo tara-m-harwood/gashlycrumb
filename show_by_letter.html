@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="/show.js" defer></script>
+    <script src="/danger_menu.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel = "stylesheet" type = "text/css" href = "styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap" rel="stylesheet">
@@ -17,6 +18,12 @@
         <label for="letter-form">Or find tragedy by alphabet:</label>
         <input type="text" id="letter-input" name="letter-form">
         <input type="submit" id="letter-submit">       
-    </form>    
+    </form>
+    <form id="fate-form" action="./show_by_fate.html">
+        <label for="letter-form">Or, find tragedy by danger:</label>
+        <select id="fate-select" name="fate-select">
+        <input type="submit" id="fate-submit">  
+        </select>
+    </form>       
 </body>
 </html>

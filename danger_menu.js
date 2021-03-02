@@ -6,7 +6,8 @@ fetch('http://localhost:3000/tinies/')
       console.log(tiny.name)
       $selectOption = document.createElement('option')
       $selectOption.className = 'fate-select-option'
-      $selectOption.innerText = tiny.name
+      $selectOption.value = tiny.id
+      $selectOption.innerText = tiny.danger
       $selectContainer.append($selectOption)
       }
     )

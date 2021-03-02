@@ -69,6 +69,22 @@ a#random-button {
 	text-decoration:none;
 }
 
+#fate-form {
+	box-shadow:inset 0px 1px 0px 0px #000000;
+	background-color:#000000;
+	border:1px solid #000000;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:24px;
+	font-weight:bold;
+	padding:15px;
+    margin: 1px;
+	width: 480px;
+	text-decoration:none;
+	margin: 0 auto; 
+}
+
 input[type=text] {
 	width: 15px;
 	font-size:24px;
@@ -78,7 +94,17 @@ input[type=text] {
 
   input[type=submit] {
 	display: none;
-  }  
+  }
+
+  select#fate-select {
+	font-size:18px;
+  }
+  
+  /* #fate-select {
+	background-color:#ffffff;
+	color:#000000;  
+	font-size:14px;
+  } */
 
 /* the good one
 a#random-button {
