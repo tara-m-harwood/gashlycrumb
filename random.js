@@ -1,5 +1,6 @@
+
 // selects the HTML container that will hold all the items
-$allTiniesContainer = document.querySelector('#random-tiny-container')
+$allTiniesContainer = document.querySelector('#show-tiny-container')
 
 // fetches the data
 fetch('http://localhost:3000/tinies/random')
@@ -23,5 +24,4 @@ fetch('http://localhost:3000/tinies/random')
       }
     )
   }
-)       
-
+) 

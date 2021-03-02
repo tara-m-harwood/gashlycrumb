@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/random.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel = "stylesheet" type = "text/css" href = "styles.css" />
+    <link rel = "stylesheet" type = "text/css" href = "styles.css">
+    <script src="/random.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap" rel="stylesheet">
     <title>Randomly Creepy</title>
 </head>
 <body>
-    <div id="random-tiny-container"></div>
-    <a href="./random.html" id="random-button">Tempt Fate Again?</a>
+    <div id="show-tiny-container"></div>
+    <a a href="./random.html" class="button" id="random-button">Tempt Fate?</a>
+    <form id="letter-form" action="./show_by_letter.html">
+        <label for="letter-form">Or find tragedy by alphabet:</label>
+        <input type="text" id="letter-input" name="letter-form">
+        <input type="submit" id="letter-submit">       
+    </form>  
 </body>
 </html>
