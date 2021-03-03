@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="show-tiny-container"></div>
-    <a a href="./random.html" class="button" id="random-button">Tempt Fate?</a>
+    <a a href="./random.html" class="button" id="random-button">Tempt Fate Again?</a>
     <form id="letter-form" action="./show_by_letter.html">
         <label for="letter-form">Or find tragedy by alphabet:</label>
         <input type="text" id="letter-input" name="letter-form">
@@ -21,9 +21,8 @@
     </form>
     <form id="fate-form" action="./show_by_fate.html">
         <label for="fate-form">Or, find tragedy by danger:</label>
-        <select id="fate-select" name="fate-select">
+        <select id="fate-select" name="fate-select" onchange="this.form.submit()"></select>
         <input type="submit" id="fate-submit">  
-        </select>
     </form>     
 </body>
 </html>
