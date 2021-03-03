@@ -36,5 +36,10 @@ class TiniesController < ApplicationController
         @tiny = Tiny.all.sample(1)
         render json: @tiny
     end
+
+    def show_by_letter
+        @tiny = Tiny.find_by(letter: params[:letter])
+        render json: @tiny
+    end
     
 end

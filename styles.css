@@ -16,6 +16,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     width:480px;
+	padding-bottom: 8px;
     height: auto;
   }
 
@@ -24,9 +25,37 @@ h1 {
     background-color: #000;
     padding: 20px;
     margin: 8px;
+	font-size:56px;
+}
+
+button#show-by-letter-button {
+	padding: 10px;
+	color:#ffffff;
+	background-color:#000000;
+	font-size:24px;
+	width: 480px;
 }
 
 a#random-button {
+	padding: 10px;
+	color:#ffffff;
+	background-color:#000000;
+	font-size:24px;
+	width: 480px;
+}
+
+.button {
+	background-color:#000000;
+	border:1px solid #000000;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:24px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+#letter-form {
 	box-shadow:inset 0px 1px 0px 0px #000000;
 	background-color:#000000;
 	border:1px solid #000000;
@@ -35,10 +64,59 @@ a#random-button {
 	color:#ffffff;
 	font-size:24px;
 	font-weight:bold;
-	padding:15px 165px;
-  margin: 8px;
+	padding:10px;
+    margin: 8px;
+	width: 480px;
 	text-decoration:none;
 }
+
+#fate-form {
+	box-shadow:inset 0px 1px 0px 0px #000000;
+	background-color:#000000;
+	border:1px solid #000000;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:24px;
+	font-weight:bold;
+	padding:15px;
+    margin: 1px;
+	width: 480px;
+	text-decoration:none;
+	margin: 0 auto; 
+}
+
+input[type=text] {
+	width: 15px;
+	font-size:24px;
+	background-color:#ffffff;
+	color:#000000;
+  }
+
+  input[type=submit] {
+	display: none;
+  }
+
+  select#fate-select {
+	font-size:18px;
+  }
+
+ h3 {
+	font-size:32px;
+	background-color:hsl(0, 2%, 75%);
+	border: 20px solid black;	
+	color:#000000; 
+	padding:15px;
+    margin: 10px;
+	width: 480px;
+	display:inline-block;
+  }
+  
+  /* #fate-select {
+	background-color:#ffffff;
+	color:#000000;  
+	font-size:14px;
+  } */
 
 /* the good one
 a#random-button {

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/fate.js" defer></script>
+    <script src="/danger_menu.js" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel = "stylesheet" type = "text/css" href = "styles.css">
-    <script src="/danger_menu.js" defer></script>
-    <script src="/random.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap" rel="stylesheet">
-    <title>Randomly Creepy</title>
+    <title>Fatalistically Creepy</title>
 </head>
 <body>
     <div id="show-tiny-container"></div>
@@ -20,7 +20,7 @@
         <input type="submit" id="letter-submit">       
     </form>
     <form id="fate-form" action="./show_by_fate.html">
-        <label for="fate-form">Or, find tragedy by danger:</label>
+        <label for="letter-form">Or, find tragedy by danger:</label>
         <select id="fate-select" name="fate-select" onchange="this.form.submit()"></select>
         <input type="submit" id="fate-submit">  
     </form>     
