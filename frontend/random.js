@@ -7,7 +7,7 @@ $allTiniesContainer = document.querySelector('#show-tiny-container')
 fetch('http://localhost:3000/tinies/random')
 .then(response => response.json())
 .then(tiny => {
-    tiny = tiny[0] 
+    tiny = tiny[0]  // I hate this.  Isn't there a better way?
     // creates a new HTML container element to hold each item
     const $eachTinyContainer = document.createElement('div')
     $eachTinyContainer.className = "tinyCard"

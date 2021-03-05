@@ -3,13 +3,9 @@ $allTiniesContainer = document.querySelector('#show-tiny-container')
 
 // parses the params
 const queryParams = window.location.search;
-  // console.log(`query params: ${queryParams}`)
 const queryParamsObject = new URLSearchParams(queryParams)
-  // console.log(`query params: ${queryParamsObject}`)
 const letter = queryParamsObject.get("letter-form")
-  // console.log(`letter: ${letter}`)
 const letterUp = letter.toUpperCase()
-// console.log(`letterUp: ${letterUp}`)
 
 // fetches the data
 fetch(`http://localhost:3000/tinies/show_by_letter/${letterUp}`)
