@@ -4,7 +4,7 @@ queryParams = window.location.search
 queryParamsObject = new URLSearchParams(queryParams)
 id = queryParamsObject.get("fate-select")
 
-fetch(`http://localhost:3000/tinies/${id}`)
+fetch(`https://gashlycrumb-randomly-creepy.herokuapp.com/tinies/${id}`)
   .then(response => response.json())
   .then(tiny => {
       // creates a new HTML container element to hold each item

@@ -8,7 +8,7 @@ const letter = queryParamsObject.get("letter-form")
 const letterUp = letter.toUpperCase()
 
 // fetches the data
-fetch(`http://localhost:3000/tinies/show_by_letter/${letterUp}`)
+fetch(`https://gashlycrumb-randomly-creepy.herokuapp.com/tinies/show_by_letter/${letterUp}`)
   .then(response => response.json())
   .then(tiny => {
       console.log(tiny) 
