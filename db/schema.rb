@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_28_032803) do
+ActiveRecord::Schema.define(version: 2021_03_02_145722) do
 
   create_table "tinies", force: :cascade do |t|
     t.string "letter"
     t.string "name"
     t.string "fate"
     t.string "image"
+    t.string "danger"
+    t.string "category"
   end
 
 end

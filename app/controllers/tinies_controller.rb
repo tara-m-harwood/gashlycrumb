@@ -33,7 +33,12 @@ class TiniesController < ApplicationController
     end
 
     def random
-        @tiny = Tiny.all.sample(1)
+        @tiny = Tiny.all.sample(1).flatten
+        render json: @tiny
+    end
+
+    def show_by_letter
+        @tiny = Tiny.find_by(letter: params[:letter])
         render json: @tiny
     end
     
