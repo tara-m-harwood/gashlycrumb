@@ -1,13 +1,12 @@
-
-// selects the HTML container that will hold all the items
 $allTiniesContainer = document.querySelector('#show-tiny-container')
 
-// fetches the data
-fetch('http://localhost:3000/tinies/random')
+queryParams = window.location.search
+queryParamsObject = new URLSearchParams(queryParams)
+id = queryParamsObject.get("fate-select")
+
+fetch(`http://localhost:3000/tinies/${id}`)
   .then(response => response.json())
-  .then(tinies => {
-      console.log(tinies) 
-      tinies.forEach(tiny => {
+  .then(tiny => {
       // creates a new HTML container element to hold each item
       const $eachTinyContainer = document.createElement('div')
       $eachTinyContainer.className = "tinyCard"
@@ -22,7 +21,4 @@ fetch('http://localhost:3000/tinies/random')
       // attaches elements to the DOM
       $eachTinyContainer.append($tinyTitle, $tinyImage, $tinySubtitle)
       $allTiniesContainer.append($eachTinyContainer)
-      }
-    )
-  }
-) 
+    });

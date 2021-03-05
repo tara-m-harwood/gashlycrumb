@@ -17,8 +17,6 @@ ActiveRecord::Schema.define(version: 2021_03_02_145722) do
     t.string "name"
     t.string "fate"
     t.string "image"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
     t.string "danger"
     t.string "category"
   end
