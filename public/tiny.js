@@ -19,13 +19,13 @@ console.log(endparam)
 fetch(`${baseURL}${endpoint}/${endparam}`)
     .then(response => response.json())
     // .then(console.log)
-    .then(console.log(`${baseURL}${endpoint}/${endparam}`))
-    // .then(tiny => {
-    //     const $tinyCard = document.createElement('div')
+    // .then(console.log(`${baseURL}${endpoint}/${endparam}`))
+    .then(tiny => {
+        const $tinyCard = document.createElement('div')
 
-    //     const $tinyTitle = document.createElement('h1')
-    //     $tinyTitle.textContent = `You are ${tiny.name}`
+        const $tinyTitle = document.createElement('h1')
+        $tinyTitle.textContent = `You are ${tiny.name}`
 
-    //     $tinyCard.append($tinyTitle)
-    //     $tinyContainer.append($tinyCard)
-    // })
+        $tinyCard.append($tinyTitle)
+        $tinyContainer.append($tinyCard)
+    })
