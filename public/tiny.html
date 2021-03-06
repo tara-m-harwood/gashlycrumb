@@ -6,37 +6,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type = "text/css" href = "styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap">
-        <!-- <script src="/dangerMenu.js" defer></script> -->
+        <script src="/dangerMenu.js" defer></script>
         <script src="/tiny.js" defer></script>
         <title>Singularly Creepy</title>
     </head>
     <body>
         <h4>This is a test of the emergency Gashlycrumb system. This is only a test</h4>
-        <section id='tiny-container'>
+        <section id ='tiny-container'>
             <!-- append tiny-card here -->
         </section>
 
-        <section id='nav'>
+        <section id ='nav'>
 
-            <div id='random-button'>
-                <a href='./tiny.html?endpoint=random&endparam=0'
-                   class="button" id="random-button">
+            <div id ='random-button-div'>
+                <a href = './tiny.html?endpoint=random&endparam=0'
+                   class = 'button' id = 'random-button'>
                    Tempt Fate Again?
                 </a>
             </div>
 
-            <div id='alpha-form'>
-                <a href='./tiny.html?endpoint=show_by_letter&endparam=B'
-                    class="button" id="alpha-button">
-                    alphabet test
-                </a>
+            <div id = 'alpha-form-div'>
+                <form id = 'alpha-form' action='./tiny.html'>
+                    <label for = 'alpha-input'>Tragedy by Alphabet:</label>
+                    <input id = 'alpha-input' type = 'text' name = 'endparam'/>
+                    <input id = 'alpha-endpoint' type = 'hidden' name = 'endpoint' value = 'show_by_letter'>
+                    <input id = 'letter-submit' type = 'submit'>       
+                </form>
             </div>
 
-            <div id='danger-form'>
-                <a href='./tiny.html?endpoint=&endparam=15'
-                class="button" id="danger-button">
-                danger test
-                </a>
+            <div id = 'danger-form-div'>
+                <form id = 'danger-form' action = './tiny.html'>
+                    <label for = 'danger-input'>Tragedy by Danger:</label>
+                    <!-- <input id = 'danger-endpoint' type = 'hidden' name = 'endpoint' value = ''> -->
+                    <select id = 'danger-select' name = 'endparam' onchange = 'this.form.submit()'></select>
+                </form>
+
+
             </div>
 
         </section>
