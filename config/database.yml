@@ -23,4 +23,4 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: ENV["DATABASE_URL"]
+  database: ENV["DATABASE_URL"] 
