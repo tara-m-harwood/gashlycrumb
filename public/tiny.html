@@ -4,10 +4,47 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type = "text/css" href = "styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap">
+        <!-- <script src="/dangerMenu.js" defer></script> -->
+        <script src="/tiny.js" defer></script>
         <title>Singularly Creepy</title>
     </head>
     <body>
-        <h1>This is a test of the emergency Gashlycrumb system</h1>
+        <h4>This is a test of the emergency Gashlycrumb system. This is only a test</h4>
+        <section id='tiny-container'>
+            <!-- append tiny-card here -->
+        </section>
+
+        <section id='nav'>
+
+            <div id='random-button'>
+                <a href='./tiny.html?endpoint=random&endparam=0'
+                   class="button" id="random-button">
+                   Tempt Fate Again?
+                </a>
+            </div>
+
+            <div id='alpha-form'>
+                <a href='./tiny.html?endpoint=show_by_letter&endparam=B'
+                    class="button" id="alpha-button">
+                    alphabet test
+                </a>
+            </div>
+
+            <div id='danger-form'>
+                <a href='./tiny.html?endpoint=&endparam=15'
+                class="button" id="danger-button">
+                danger test
+                </a>
+            </div>
+
+        </section>
+
+        <section id='footer'>
+            <div id='copyright-info'></div>
+            <div id='about-me'></div>
+        </section>
         
     </body>
 </html>
