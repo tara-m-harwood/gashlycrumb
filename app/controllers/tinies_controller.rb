@@ -33,7 +33,7 @@ class TiniesController < ApplicationController
     end
 
     def random
-        @tiny = Tiny.all.sample(1).flatten
+        @tiny = Tiny.random(params)
         render json: @tiny
     end
 

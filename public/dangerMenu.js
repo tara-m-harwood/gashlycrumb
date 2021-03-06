@@ -1,6 +1,7 @@
 $selectContainer = document.querySelector('#fate-select')
 
-fetch('https://gashlycrumb-randomly-creepy.herokuapp.com/tinies/')
+// fetch('https://gashlycrumb-randomly-creepy.herokuapp.com/tinies/')
+fetch('https://localhost:3000/tinies/')
   .then(response => response.json())
   .then( tinies => {tinies.forEach(tiny => {
       $selectOption = document.createElement('option')

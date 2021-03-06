@@ -15,7 +15,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:480px;
+    width:80%;
 	padding-bottom: 8px;
     height: auto;
   }
@@ -23,9 +23,9 @@ img {
 h1 {
     color: #fff;
     background-color: #000;
-    padding: 20px;
-    margin: 8px;
-	font-size:56px;
+    padding: 10px;
+    margin: 5px;
+	font-size: 46px;
 }
 
 button#show-by-letter-button {
@@ -33,15 +33,15 @@ button#show-by-letter-button {
 	color:#ffffff;
 	background-color:#000000;
 	font-size:24px;
-	width: 480px;
+	width: 50%;
 }
 
 a#random-button {
-	padding: 10px;
+	padding: 2px;
 	color:#ffffff;
 	background-color:#000000;
-	font-size:24px;
-	width: 480px;
+	font-size:6vw;
+	width: 90%;
 }
 
 .button {
@@ -50,23 +50,21 @@ a#random-button {
 	display:block;
 	cursor:pointer;
 	color:#ffffff;
-	font-size:24px;
+	font-size:6vw;
 	font-weight:bold;
 	text-decoration:none;
 }
 
 #letter-form {
-	box-shadow:inset 0px 1px 0px 0px #000000;
 	background-color:#000000;
-	border:1px solid #000000;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-size:24px;
+	font-size:6vw;
 	font-weight:bold;
-	padding:10px;
-    margin: 8px;
-	width: 480px;
+	padding:5px;
+    margin: 3px;
+	width: 90%;
 	text-decoration:none;
 }
 
@@ -79,9 +77,9 @@ a#random-button {
 	color:#ffffff;
 	font-size:24px;
 	font-weight:bold;
-	padding:15px;
-    margin: 1px;
-	width: 480px;
+	padding: 5px;
+    margin: 3px;
+	width: 90%;
 	text-decoration:none;
 	margin: 0 auto; 
 }
@@ -102,13 +100,13 @@ input[type=text] {
   }
 
  h3 {
-	font-size:32px;
+	font-size:6px;
 	background-color:hsl(0, 2%, 75%);
 	border: 20px solid black;	
 	color:#000000; 
 	padding:15px;
     margin: 10px;
-	width: 480px;
+	width: 50%;
 	display:inline-block;
   }
   
