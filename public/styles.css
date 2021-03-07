@@ -3,7 +3,12 @@
 	font-family: 'Dosis', sans-serif; 
     font-family: 'Gentium Book Basic', serif;
   }
+
+a:link, a:visited {
+  color: #8D7D68;
+}  
   
+
 body {
 	display: flex;
 	text-align: center;
@@ -11,15 +16,12 @@ body {
 	background-color: #000;
 }
 
-a:link, a:visited {
-  color: #8D7D68;
-}
-
 @media only screen and ( min-width: 768px ) {
 	body {
 		background-image: url( 'assets/wallpaper.jpg' );
 	}
 }
+
 
 @media only screen and ( min-width: 768px ) {
 	div#center-column {
@@ -35,44 +37,40 @@ section#main-page-header {
 	font-size: 26px;
 }
 
-@media only screen and ( min-width: 768px ) {
+/* @media only screen and ( min-width: 768px ) {
 	section#main-page-header {
-		padding: 20px;
-		font-size: 30px;
+		font-size: 28px;
 	}
-}	
+}	 */
+
 
 img#full-cast-image {
-	width: 340px;
+	width: 300px;
 	height: auto;
-	padding-top: 15px;
+	padding-top: 10px;
 }
 
-@media only screen and ( min-width: 768px ) {
-	section#tiny-container img {
-		width: 420px;
-	}
-}
-
-@media only screen and ( min-width: 768px ) {
-	img#full-cast-image {
-		width: 420px;
-		height: auto;
-	}
-}
 
 section#tiny-container h1 {
     padding: 5px;
     margin: 5px;
-	font-size:48px;
+	font-size:42px;
 }
 
 @media only screen and ( min-width: 768px ) {
 	section#tiny-container h1 {
-		font-size:58px;
-		padding: 10px;
+		font-size:48px;
+		padding: 5px;
 	}
 }
+
+
+@media only screen and ( min-width: 768px ) {
+	section#tiny-container img {
+		width: 340px;
+	}
+}
+
 
 section#tiny-container h2 {
     padding: 5px;
@@ -82,23 +80,24 @@ section#tiny-container h2 {
 
 @media only screen and ( min-width: 768px ) {
 	section#tiny-container h2 {
-		font-size:42px;
-		padding: 10px;
+		font-size:36px;
+		padding: 0px;
 	}
 }
 
 
 section#nav-forms{
-	font-size: 6vw;
+	font-size: 5vw;
 }
 
 @media only screen and ( min-width: 768px ) {
 	section#nav-forms form {
-	font-size: 24px;
-	padding: 10px;
+	font-size: 18px;
+	padding: 8px;
 	margin: 5px 175px 5px 175px;
 	}
 }
+
 
 form {
 	padding: 2vw 3vw 2vw 3vw;
@@ -112,12 +111,11 @@ form {
 	padding: 15px 0px 15px 0px;
 	margin: 10px;
 	font-size: 24px;
-	border-style: double;
-	border-color: #fff;
 	border-width: 2px;
 	border-color: #8D7D68;
 	}
 }
+
 
 input {
 	font-size: 4vw;
@@ -152,14 +150,14 @@ select#danger-select {
 section#footer div{
 	padding: 12px;
 	font-family: 'Dosis', sans-serif;
-	font-size: 15px;   
+	font-size: 14px;   
 }
 
 @media only screen and ( min-width: 768px ) {
 	section#footer div{
 		width: 600px;
-		padding: 15px;
-		font-size: 22px;  
+		padding: 10px;
+		font-size: 16px;  
 	}
 }
 
