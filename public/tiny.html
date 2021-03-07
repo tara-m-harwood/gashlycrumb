@@ -11,44 +11,65 @@
         <title>Singularly Creepy</title>
     </head>
     <body>
-        <h4>This is a test of the emergency Gashlycrumb system. This is only a test</h4>
         <section id ='tiny-container'>
-            <!-- append tiny-card here -->
+            <!-- tiny.js appends tiny-card here -->
         </section>
 
-        <section id ='nav'>
+        <section id ='nav-forms'>
 
-            <div id ='random-button-div'>
-                <a href = './tiny.html?endpoint=random&endparam=0'
-                   class = 'button' id = 'random-button'>
-                   Tempt Fate Again?
-                </a>
+            <div id ='random-form-div'>
+                <form id = 'random-form' action = 'tiny.html'>
+                    <label for = 'random-submit' >Random Tragedy</label>
+                    <input id = 'random-endpoint' type = 'hidden' 
+                           name = 'endpoint' value = 'random'/>
+                    <input id = 'random-endparam' type = 'hidden' 
+                           name = 'endparam' value="0"/>
+                    <input id = 'random-submit' value= 'Submit to Fate' type = 'submit'>   
+                </form>
             </div>
 
             <div id = 'alpha-form-div'>
-                <form id = 'alpha-form' action='./tiny.html'>
-                    <label for = 'alpha-input'>Tragedy by Alphabet:</label>
-                    <input id = 'alpha-input' type = 'text' name = 'endparam'/>
-                    <input id = 'alpha-endpoint' type = 'hidden' name = 'endpoint' value = 'show_by_letter'>
-                    <input id = 'letter-submit' type = 'submit'>       
+                <form id = 'alpha-form' action = 'tiny.html'>
+                    <label for = 'alpha-input'>Alphabetic Tragedy</label>
+                    <input id = 'alpha-endpoint' type = 'hidden' 
+                           name = 'endpoint' value = 'show_by_letter'>
+                    <input id = 'alpha-endparam' type = 'text' 
+                           name = 'endparam' value = 'A'
+                           onchange = 'this.form.submit()' />
                 </form>
             </div>
 
             <div id = 'danger-form-div'>
                 <form id = 'danger-form' action = './tiny.html'>
-                    <label for = 'danger-input'>Tragedy by Danger:</label>
-                    <input id = 'danger-endpoint' type = 'hidden' name = 'endpoint' value = 'show_by_number'>
-                    <select id = 'danger-select' name = 'endparam' onchange = 'this.form.submit()'></select>
+                    <label for = 'danger-input'>Perilous Tragedy</label>
+                    <input id = 'danger-endpoint' type = 'hidden' 
+                           name = 'endpoint' value = 'show_by_number'>
+                    <select id = 'danger-select-endparam' 
+                            name = 'endparam' onchange = 'this.form.submit()'></select>
                 </form>
-
-
             </div>
 
         </section>
 
-        <section id='footer'>
-            <div id='copyright-info'></div>
-            <div id='about-me'></div>
+        <section id = 'footer'>
+
+            <div id= 'unsticky'></div>
+            <div id= 'stick-to-bottom'>
+
+                <div id = 'copyright-info'>
+                    Illustrations from <a href = 'https://edwardgoreyhouse.org/pages/edward-gorey-gashlycrumb-tinies'>"The Gashleycrumb Tinies"</a>
+                    Edward Gorey, 1963.
+                    <br><br>     
+                    <a href = 'https://edwardgoreyhouse.org/pages/edward-gorey-licensing-information' >The Edward Gorey Charitable Trust</a>
+                    is the sole owner of all copyrights and related rights to the works of Edward Gorey.
+                </div>
+
+                <div id='about-me'>
+                    <br>
+                    App by <a href = 'https://www.linkedin.com/in/taraharwood/'>Tara Harwood</a>, 2021
+                </div>
+
+            </div>
         </section>
         
     </body>
