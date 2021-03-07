@@ -49,11 +49,44 @@ img#full-cast-image {
 }
 
 @media only screen and ( min-width: 768px ) {
+	section#tiny-container img {
+		width: 420px;
+	}
+}
+
+@media only screen and ( min-width: 768px ) {
 	img#full-cast-image {
 		width: 420px;
 		height: auto;
 	}
 }
+
+section#tiny-container h1 {
+    padding: 5px;
+    margin: 5px;
+	font-size:48px;
+}
+
+@media only screen and ( min-width: 768px ) {
+	section#tiny-container h1 {
+		font-size:58px;
+		padding: 10px;
+	}
+}
+
+section#tiny-container h2 {
+    padding: 5px;
+    margin: 12px 5px 12px 5px;
+	font-size:32px;
+}
+
+@media only screen and ( min-width: 768px ) {
+	section#tiny-container h2 {
+		font-size:42px;
+		padding: 10px;
+	}
+}
+
 
 section#nav-forms{
 	font-size: 6vw;
@@ -87,7 +120,7 @@ form {
 }
 
 input {
-	font-size: 5vw;
+	font-size: 4vw;
 }
 
 @media only screen and ( min-width: 768px ) {
@@ -107,7 +140,7 @@ input#alpha-endparam {
 }
 
 select#danger-select {
-	font-size: 5vw;
+	font-size: 3vw;
 }
 
 @media only screen and ( min-width: 768px ) {
@@ -125,22 +158,15 @@ section#footer div{
 @media only screen and ( min-width: 768px ) {
 	section#footer div{
 		width: 600px;
-		padding: 20px;
+		padding: 15px;
 		font-size: 22px;  
 	}
 }
 
 section#footer div#about-me {
-		font-family: 'Gentium Book Basic', serif;
-		font-size: 24px;  
-	}
-
-/* @media only screen and ( min-width: 768px ) {
-	section#footer div#about-me {
-		font-size: 28px;
-		/* font-family: 'Gentium Book Basic', serif;   */
-	}
-} */
-
+	font-family: 'Gentium Book Basic', serif;
+	font-size: 24px;
+	padding-bottom: 50px;  
+}
 
 

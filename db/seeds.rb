@@ -9,7 +9,7 @@
 Tiny.destroy_all
 Tiny.create(letter: 'A', name: 'Amy', fate: 'who fell down the stairs', image: './assets/gashlycrumb2.jpg', danger: 'stairs', category: 'accident')
 Tiny.create(letter: 'B', name: 'Basil', fate: 'assaulted by bears', image: './assets/gashlycrumb3.jpg', danger: 'bears', category: 'animal')
-Tiny.create(letter: 'C', name: 'Clara', fate: 'who wasted away', image: './assets/gashlycrumb4.jpg', danger: 'wasting diseases', category: 'medical')
+Tiny.create(letter: 'C', name: 'Clara', fate: 'who wasted away', image: './assets/gashlycrumb4.jpg', danger: 'wasting', category: 'medical')
 Tiny.create(letter: 'D', name: 'Desmond', fate: 'thrown out of a sleigh', image: './assets/gashlycrumb5.jpg', danger: 'sleighs', category: 'violent')
 Tiny.create(letter: 'E', name: 'Ernest', fate: 'who choked on a peach', image: './assets/gashlycrumb6.jpg', danger: 'peaches', category: 'accident')
 Tiny.create(letter: 'F', name: 'Fanny', fate: 'sucked dry by a leech', image: './assets/gashlycrumb7.jpg', danger: 'leeches', category: 'animal')
