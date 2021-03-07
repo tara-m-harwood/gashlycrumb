@@ -41,5 +41,10 @@ class TiniesController < ApplicationController
         @tiny = Tiny.find_by(letter: params[:letter])
         render json: @tiny
     end
+
+    def show_by_number
+        @tiny = Tiny.find_by(id: params[:id])
+        render json: @tiny
+    end
     
 end
