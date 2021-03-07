@@ -5,7 +5,7 @@
   }
 
 a:link, a:visited {
-  color: #8D7D68;
+  color: #EBCC9E;
 }  
   
 
@@ -27,7 +27,7 @@ body {
 	div#center-column {
 			background-color: #000;
 			width: 768px;
-			padding: 10;
+			padding: 0;
 	}
 }
 
@@ -36,20 +36,6 @@ section#main-page-header {
 	padding: 10px;
 	font-size: 26px;
 }
-
-/* @media only screen and ( min-width: 768px ) {
-	section#main-page-header {
-		font-size: 28px;
-	}
-}	 */
-
-
-img#full-cast-image {
-	width: 300px;
-	height: auto;
-	padding-top: 10px;
-}
-
 
 section#tiny-container h1 {
     padding: 5px;
@@ -60,10 +46,21 @@ section#tiny-container h1 {
 @media only screen and ( min-width: 768px ) {
 	section#tiny-container h1 {
 		font-size:48px;
-		padding: 5px;
+		padding: 15px;
 	}
 }
 
+
+img#full-cast-image {
+	width: 300px;
+	height: auto;
+	padding-top: 10px;
+}
+
+
+section#tiny-container img {
+	width: 300px;
+}
 
 @media only screen and ( min-width: 768px ) {
 	section#tiny-container img {
@@ -73,15 +70,15 @@ section#tiny-container h1 {
 
 
 section#tiny-container h2 {
-    padding: 5px;
-    margin: 12px 5px 12px 5px;
-	font-size:32px;
+    padding: 10px;
+    margin: 5px;
+	font-size:28px;
 }
 
 @media only screen and ( min-width: 768px ) {
 	section#tiny-container h2 {
 		font-size:36px;
-		padding: 0px;
+		padding: 10px;
 	}
 }
 
@@ -112,7 +109,6 @@ form {
 	margin: 10px;
 	font-size: 24px;
 	border-width: 2px;
-	border-color: #8D7D68;
 	}
 }
 
@@ -127,18 +123,21 @@ input {
 	}
 }
 
+
 input#random-submit {
 	color: #000;
 	width: 420;
 }
+
 
 input#alpha-endparam {
 	width: 5vw;
 	text-align: center;
 }
 
+
 select#danger-select {
-	font-size: 3vw;
+	font-size: 4vw;
 }
 
 @media only screen and ( min-width: 768px ) {
@@ -147,24 +146,36 @@ select#danger-select {
 	}
 }
 
+
 section#footer div{
-	padding: 12px;
+	padding: 8px;
 	font-family: 'Dosis', sans-serif;
-	font-size: 14px;   
+	font-size: 12px;   
 }
 
 @media only screen and ( min-width: 768px ) {
 	section#footer div{
-		width: 600px;
+		width: 480px;
 		padding: 10px;
 		font-size: 16px;  
 	}
 }
 
+
 section#footer div#about-me {
 	font-family: 'Gentium Book Basic', serif;
-	font-size: 24px;
+	font-size: 20px;
 	padding-bottom: 50px;  
 }
 
 
+div#about-me a{	
+  color: #000; 
+}
+
+
+div#about-me img{
+	width: 25px;
+	height: auto;
+	padding-left: 10px;  
+}
