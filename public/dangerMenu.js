@@ -1,4 +1,4 @@
-$selectContainer = document.querySelector( '#danger-select' )
+$selectContainer = document.querySelector( '#fate-select' )
 
 fetch('https://gashlycrumb-randomly-creepy.herokuapp.com/tinies/')
   .then(response => response.json())
