@@ -4,26 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" type = "text/css" href = "styles.css" />
-    <link rel="icon" href="gashlycrumb.png">
-    <script src="/dangerMenu.js" defer></script>
-    <title>Gashlycrumb Tinies Random Generator</title>
+    <link rel = 'preconnect' href='https://fonts.gstatic.com'>
+    <link rel = 'stylesheet' href = 'https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap'>
+    <link rel = 'stylesheet' href = 'https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap'>
+    <link rel = 'stylesheet' type = 'text/css' href = 'styles.css' />
+    <link rel = 'icon' href = 'gashlycrumb.png'>
+    <script src = 'dangerMenu.js' defer></script>
+    <script src = 'tiny.js' defer></script>    
+    <title>Randomly Creepy</title>
 </head>
-<body>
-    <h1>Which Gashlycrumb Tiny are You?</h1>
-    <img id="full-cast" src="./assets/gashlycrumbtinies.jpg">
-    <a a href="./random.html" class="button" id="random-button">Tempt Fate?</a>
-    <form id="letter-form" action="./letter.html">
-        <label for="letter-form">Or, find tragedy by alphabet:</label>
-        <input type="text" id="letter-input" name="letter-form">
-        <input type="submit" id="letter-submit">       
-    </form>
-    <form id="fate-form" action="./fate.html">
-        <label for="letter-form">Or, find tragedy by danger:</label>
-        <select id="fate-select" name="fate-select" onchange="this.form.submit()"></select>
-        <input type="submit" id="fate-submit">  
-    </form>    
 
-</body>
-</html>
+<body>
+
+    <div id="center-column">
+
+        <section id='main-page-header'>
+            <h1 id = 'main-title'>Which Gashlycrumb Tiny Are You?</h1>
+            <img id = 'full-cast-image' src='assets/gashlycrumbtinies.jpg'>
+        </section>
+
+        <section id ='nav-forms'>
+
+            <div id ='random-form-div'>
+                <form id = 'random-form' action = 'tiny.html'>
+                    <label for = 'random-submit' >Randomly -></label>
+                    <input id = 'random-endpoint' type = 'hidden' 
+                        name = 'endpoint' value = 'random'/>
+                    <input id = 'random-endparam' type = 'hidden' 
+                        name = 'endparam' value="0"/>
+                    <input id = 'random-submit' value= 'Submit to Fate' type = 'submit'>   
+                </form>
+            </div>
+
+            <div id = 'alpha-form-div'>
+                <form id = 'alpha-form' action = 'tiny.html'>
+                    <label for = 'alpha-input'>Alphabetically -></label>
+                    <input id = 'alpha-endpoint' type = 'hidden' 
+                        name = 'endpoint' value = 'show_by_letter'>
+                    <input id = 'alpha-endparam' type = 'text' 
+                        name = 'endparam' value = 'A'
+                        onchange = 'this.form.submit()' />
+                </form>
+            </div>
+
+            <div id = 'danger-form-div'>
+                <form id = 'danger-form' action = './tiny.html'>
+                    <label for = 'danger-input'>Perilously -></label>
+                    <input id = 'danger-endpoint' type = 'hidden' 
+                        name = 'endpoint' value = 'show_by_number'>
+                    <select id = 'danger-select' 
+                            name = 'endparam' onchange = 'this.form.submit()'></select>
+                </form>
+            </div>
+
+        </section>
+
+        <section id = 'footer'>
+
+            <div id = 'copyright-info'>
+                <a href = 'https://edwardgoreyhouse.org/pages/edward-gorey-licensing-information' >The Edward Gorey Charitable Trust</a>
+                is the sole owner of all copyrights and related rights to the works of Edward Gorey.
+            </div>
+
+            <div id='about-me'>
+                App by <a href = 'https://www.linkedin.com/in/taraharwood/'>Tara Harwood</a>, 2021
+            </div>
+
+        </section>
+    </div>
+  </body>
+</html>   
