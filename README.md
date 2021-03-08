@@ -1,6 +1,8 @@
 # Which Gashlycrumb Tiny Are You?
 > a randomly creepy app
 
+![Cover illustration from The Gashlycrumb Tinies. Grim Reaper holds an umbrella over 26 children about to meet tragic fates](/public/assets/gashlycrumbtinies.jpg)
+
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
@@ -13,9 +15,9 @@
 Gashlycrumb Randomly Creepy is a web application that allows users to display one character from the illustrated
 alphabet poem "The Gashlycrumb Tines" by Edward Gorey (1965).  Users can generate a character in one
 of three ways:
-* Randomly -> a character is selected from the database at random
-* Alphabetically -> users enter any letter of the alphabet to retrive the associated character
-* Perilously -> users choose a hazard from a drop-down menu to retrive the associated character
+* **Randomly** -> a character is selected from the database at random
+* **Alphabetically** -> users enter any letter of the alphabet to retrive the associated character
+* **Perilously** -> users choose a hazard from a drop-down menu to retrive the associated character
 
 This app was developed by [Tara Harwood](https://www.linkedin.com/in/taraharwood/) as a student 
 project after one month as a Full-Stack Software Engineering student at Flatiron School in Denver, CO.
@@ -25,7 +27,6 @@ of the app was for Tara to practice and solidify her new skills, both frontend a
 Any entertainment value it may provide is entirely coincidental.
 
 ## Technologies
-
 **Backend**
 * Ruby
 * Rails
